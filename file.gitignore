@@ -1,0 +1,6 @@
+# Ignorar carpetas del sistema
+/AppData/
+/Documents/
+/Downloads/
+*.log
+*.tmp
