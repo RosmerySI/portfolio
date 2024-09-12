@@ -125,7 +125,7 @@ hr {
 .resume-card-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
@@ -213,30 +213,17 @@ a {
 
 #projects {
   width: 90%;
-  height: 3000px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   place-self: center;
   margin: auto;
   padding: 50px;
-  /* background-color: var(--light-secondary); */
   color: black;
   border-radius: 100px;
-  /* background: linear-gradient(300deg,   #00bfff, #ff4c68, #ef8172);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s easy infinite; */
+ 
 }
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+
 
 .image-container {
  
@@ -343,4 +330,87 @@ footer {
     color: white;
   }
 
+}
+@media (min-width: 319px) and (max-width: 480px) {
+  .nav-container{
+    display: none;
+  }
+  h1{
+    text-align: center;
+  }
+  h2{
+    margin: 0;
+  }
+ #description{
+  width: 100%;
+ }
+ .resume-card-container{
+  flex-direction: column; 
+  
+ }
+ .resume-card{
+  width: 100%;
+  
+ }
+ .skills-container{
+  display: flex;
+  flex-direction: column;
+ }
+ .project-container{
+  display: flex;
+  flex-direction: column;
+ }
+ .contact-image{
+  display: none;
+ }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .nav-container{
+    display: none;
+  }
+  h1{
+    text-align: center;
+  }
+  h2{
+    margin: 0;
+  }
+ #description{
+  width: 100%;
+ }
+ .resume-card-container{
+  flex-direction: column; 
+  
+ }
+ .resume-card{
+  width: 100%;
+  
+ }
+ .skills-container{
+  display: flex;
+  flex-direction: column;
+  
+ }
+
+ .project-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+ }
+ .contact-image{
+  display: none;
+ }
+
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .project-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+   }
+}
+
+@media (min-width: 1601px) {
+  
 }
